@@ -1,0 +1,93 @@
+{
+  "players": [
+    {
+      "id": "human",
+      "name": "You",
+      "kind": "human",
+      "rating": 1200,
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0
+    },
+    {
+      "id": "stockfish",
+      "name": "Stockfish",
+      "kind": "stockfish",
+      "rating": 1200,
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "depth": 10,
+      "skill": 20
+    },
+    {
+      "id": "stockfish-club",
+      "name": "Stockfish · Club",
+      "kind": "stockfish",
+      "rating": 1200,
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "depth": 4,
+      "skill": 5
+    },
+    {
+      "id": "38177627-a554-4db5-ace8-da827151ea71",
+      "name": "UI Test Human",
+      "kind": "human",
+      "rating": 1200,
+      "games": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0
+    }
+  ],
+  "game": {
+    "id": "a30744e3-0965-41b2-acfd-96630ea39bf5",
+    "white": "stockfish",
+    "black": "stockfish-club",
+    "whiteName": "Stockfish",
+    "blackName": "Stockfish · Club",
+    "fen": "rnbqkb1r/pppppppp/5n2/4P3/8/8/PPPP1PPP/RNBQKBNR b KQkq - 0 2",
+    "pgn": "[Event \"Ply local arena\"]\n[Site \"Local\"]\n[Date \"2026.09.09\"]\n[Round \"?\"]\n[White \"Stockfish\"]\n[Black \"Stockfish · Club\"]\n[Result \"*\"]\n\n1. e4 Nf6 2. e5 *",
+    "moves": [
+      {
+        "ply": 1,
+        "uci": "e2e4",
+        "san": "e4",
+        "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+        "elapsedMs": 210,
+        "source": "Stockfish"
+      },
+      {
+        "ply": 2,
+        "uci": "g8f6",
+        "san": "Nf6",
+        "fen": "rnbqkb1r/pppppppp/5n2/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 1 2",
+        "elapsedMs": 163,
+        "source": "Stockfish · Club"
+      },
+      {
+        "ply": 3,
+        "uci": "e4e5",
+        "san": "e5",
+        "fen": "rnbqkb1r/pppppppp/5n2/4P3/8/8/PPPP1PPP/RNBQKBNR b KQkq - 0 2",
+        "elapsedMs": 204,
+        "source": "Stockfish"
+      }
+    ],
+    "status": "paused",
+    "turn": "b",
+    "createdAt": "2026-09-09T09:07:28.772Z",
+    "rated": true,
+    "maxPlies": 200,
+    "maxCalls": 400,
+    "paceMs": 1600,
+    "calls": 0,
+    "tokens": 0
+  },
+  "history": []
+}

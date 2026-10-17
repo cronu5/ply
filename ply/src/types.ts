@@ -1,0 +1,7 @@
+export type PlayerKind = 'human' | 'stockfish' | 'ollama' | 'openai' | 'anthropic' | 'uci' | 'agent';
+export interface EngineRating { value:number|null; engine:string; version:string; source:string; url:string; listDate:string; conditions:string; versionMatch:boolean; note?:string; }
+export interface Player { id:string; name:string; kind:PlayerKind; model?:string; baseUrl?:string; hasKey?:boolean; depth?:number; skill?:number; command?:string; targetElo?:number; moveTimeMs?:number; inviteToken?:string; rating:number; ratingSeed?:number; engineRating?:EngineRating; games:number; wins:number; draws:number; losses:number; }
+export interface MoveRecord { ply:number; uci:string; san:string; fen:string; elapsedMs:number; source:string; tokens?:number; }
+export interface ArenaGame { id:string; white:string; black:string; whiteName?:string; blackName?:string; fen:string; pgn:string; moves:MoveRecord[]; status:'ready'|'running'|'paused'|'finished'|'error'; result?:string; reason?:string; turn:'w'|'b'; createdAt:string; rated:boolean; thinking?:string; error?:string; maxPlies:number; calls:number; tokens:number; modelDiagnostics?:ModelDiagnostics; }
+export interface ArenaState { players:Player[]; game:ArenaGame|null; history:ArenaGame[]; }
+export interface ModelDiagnostics { code:string; model:string; provider:string; fen:string; attempts:{response:string;issue:string;doneReason:string;inputTokens?:number;outputTokens?:number}[]; }

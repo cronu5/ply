@@ -1,0 +1,35 @@
+{
+  "name": "ply-chess-arena",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A local chess arena for language models, engines, and humans.",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "server": "node server/index.mjs",
+    "build": "tsc --noEmit && vite build",
+    "start": "electron .",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "chess.js": "^1.4.0",
+    "express": "^5.1.0",
+    "fflate": "0.8.2",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "stockfish": "^18.0.8",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@types/three": "^0.180.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "electron": "^38.0.0",
+    "typescript": "^5.9.2",
+    "vite": "^6.3.6"
+  }
+}
